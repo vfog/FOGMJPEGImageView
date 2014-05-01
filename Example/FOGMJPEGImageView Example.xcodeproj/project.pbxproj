@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1BCD121911D14B00AAD7E5 /* FOGMJPEGDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BCD111911D14B00AAD7E5 /* FOGMJPEGDataReader.m */; };
+		AEF3198819087B3D0066BFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198719087B3D0066BFAC /* Foundation.framework */; };
+		AEF3198A19087B3D0066BFAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198919087B3D0066BFAC /* CoreGraphics.framework */; };
+		AEF3198C19087B3D0066BFAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198B19087B3D0066BFAC /* UIKit.framework */; };
+		AEF3199219087B3D0066BFAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF3199019087B3D0066BFAC /* InfoPlist.strings */; };
+		AEF3199419087B3D0066BFAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF3199319087B3D0066BFAC /* main.m */; };
+		AEF3199819087B3D0066BFAC /* FOGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF3199719087B3D0066BFAC /* FOGAppDelegate.m */; };
+		AEF3199B19087B3D0066BFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF3199919087B3D0066BFAC /* Main.storyboard */; };
+		AEF3199E19087B3D0066BFAC /* FOGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF3199D19087B3D0066BFAC /* FOGViewController.m */; };
+		AEF319A019087B3D0066BFAC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF3199F19087B3D0066BFAC /* Images.xcassets */; };
+		AEF319A719087B3D0066BFAC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF319A619087B3D0066BFAC /* XCTest.framework */; };
+		AEF319A819087B3D0066BFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198719087B3D0066BFAC /* Foundation.framework */; };
+		AEF319A919087B3D0066BFAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198B19087B3D0066BFAC /* UIKit.framework */; };
+		AEF319B119087B3D0066BFAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEF319AF19087B3D0066BFAC /* InfoPlist.strings */; };
+		AEF319B319087B3D0066BFAC /* FOGMJPEGImageView_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF319B219087B3D0066BFAC /* FOGMJPEGImageView_ExampleTests.m */; };
+		AEF319C5190880410066BFAC /* FOGMJPEGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF319C4190880410066BFAC /* FOGMJPEGImageView.m */; };
+		AEF319CB1908844E0066BFAC /* FOGJPEGImageMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = AEF319CA1908844E0066BFAC /* FOGJPEGImageMarker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AEF319AA19087B3D0066BFAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEF3197C19087B3D0066BFAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEF3198319087B3D0066BFAC;
+			remoteInfo = "FOGMJPEGImageView Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE1BCD101911D14B00AAD7E5 /* FOGMJPEGDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOGMJPEGDataReader.h; sourceTree = "<group>"; };
+		AE1BCD111911D14B00AAD7E5 /* FOGMJPEGDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOGMJPEGDataReader.m; sourceTree = "<group>"; };
+		AEF3198419087B3D0066BFAC /* FOGMJPEGImageView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FOGMJPEGImageView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF3198719087B3D0066BFAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEF3198919087B3D0066BFAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AEF3198B19087B3D0066BFAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AEF3198F19087B3D0066BFAC /* FOGMJPEGImageView Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FOGMJPEGImageView Example-Info.plist"; sourceTree = "<group>"; };
+		AEF3199119087B3D0066BFAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEF3199319087B3D0066BFAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEF3199519087B3D0066BFAC /* FOGMJPEGImageView Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FOGMJPEGImageView Example-Prefix.pch"; sourceTree = "<group>"; };
+		AEF3199619087B3D0066BFAC /* FOGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOGAppDelegate.h; sourceTree = "<group>"; };
+		AEF3199719087B3D0066BFAC /* FOGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOGAppDelegate.m; sourceTree = "<group>"; };
+		AEF3199A19087B3D0066BFAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AEF3199C19087B3D0066BFAC /* FOGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FOGViewController.h; sourceTree = "<group>"; };
+		AEF3199D19087B3D0066BFAC /* FOGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOGViewController.m; sourceTree = "<group>"; };
+		AEF3199F19087B3D0066BFAC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AEF319A519087B3D0066BFAC /* FOGMJPEGImageView ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FOGMJPEGImageView ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEF319A619087B3D0066BFAC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AEF319AE19087B3D0066BFAC /* FOGMJPEGImageView ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FOGMJPEGImageView ExampleTests-Info.plist"; sourceTree = "<group>"; };
+		AEF319B019087B3D0066BFAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEF319B219087B3D0066BFAC /* FOGMJPEGImageView_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOGMJPEGImageView_ExampleTests.m; sourceTree = "<group>"; };
+		AEF319C3190880410066BFAC /* FOGMJPEGImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOGMJPEGImageView.h; sourceTree = "<group>"; };
+		AEF319C4190880410066BFAC /* FOGMJPEGImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOGMJPEGImageView.m; sourceTree = "<group>"; };
+		AEF319C91908844E0066BFAC /* FOGJPEGImageMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOGJPEGImageMarker.h; sourceTree = "<group>"; };
+		AEF319CA1908844E0066BFAC /* FOGJPEGImageMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOGJPEGImageMarker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEF3198119087B3D0066BFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF3198A19087B3D0066BFAC /* CoreGraphics.framework in Frameworks */,
+				AEF3198C19087B3D0066BFAC /* UIKit.framework in Frameworks */,
+				AEF3198819087B3D0066BFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF319A219087B3D0066BFAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF319A719087B3D0066BFAC /* XCTest.framework in Frameworks */,
+				AEF319A919087B3D0066BFAC /* UIKit.framework in Frameworks */,
+				AEF319A819087B3D0066BFAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEF3197B19087B3D0066BFAC = {
+			isa = PBXGroup;
+			children = (
+				AEF3198D19087B3D0066BFAC /* FOGMJPEGImageView Example */,
+				AEF319AC19087B3D0066BFAC /* FOGMJPEGImageView ExampleTests */,
+				AEF319C019087FFD0066BFAC /* Vendor */,
+				AEF3198619087B3D0066BFAC /* Frameworks */,
+				AEF3198519087B3D0066BFAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEF3198519087B3D0066BFAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3198419087B3D0066BFAC /* FOGMJPEGImageView Example.app */,
+				AEF319A519087B3D0066BFAC /* FOGMJPEGImageView ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEF3198619087B3D0066BFAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3198719087B3D0066BFAC /* Foundation.framework */,
+				AEF3198919087B3D0066BFAC /* CoreGraphics.framework */,
+				AEF3198B19087B3D0066BFAC /* UIKit.framework */,
+				AEF319A619087B3D0066BFAC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEF3198D19087B3D0066BFAC /* FOGMJPEGImageView Example */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3199619087B3D0066BFAC /* FOGAppDelegate.h */,
+				AEF3199719087B3D0066BFAC /* FOGAppDelegate.m */,
+				AEF3199919087B3D0066BFAC /* Main.storyboard */,
+				AEF3199C19087B3D0066BFAC /* FOGViewController.h */,
+				AEF3199D19087B3D0066BFAC /* FOGViewController.m */,
+				AEF3199F19087B3D0066BFAC /* Images.xcassets */,
+				AEF3198E19087B3D0066BFAC /* Supporting Files */,
+			);
+			path = "FOGMJPEGImageView Example";
+			sourceTree = "<group>";
+		};
+		AEF3198E19087B3D0066BFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEF3198F19087B3D0066BFAC /* FOGMJPEGImageView Example-Info.plist */,
+				AEF3199019087B3D0066BFAC /* InfoPlist.strings */,
+				AEF3199319087B3D0066BFAC /* main.m */,
+				AEF3199519087B3D0066BFAC /* FOGMJPEGImageView Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEF319AC19087B3D0066BFAC /* FOGMJPEGImageView ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEF319B219087B3D0066BFAC /* FOGMJPEGImageView_ExampleTests.m */,
+				AEF319AD19087B3D0066BFAC /* Supporting Files */,
+			);
+			path = "FOGMJPEGImageView ExampleTests";
+			sourceTree = "<group>";
+		};
+		AEF319AD19087B3D0066BFAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEF319AE19087B3D0066BFAC /* FOGMJPEGImageView ExampleTests-Info.plist */,
+				AEF319AF19087B3D0066BFAC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEF319C019087FFD0066BFAC /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				AEF319C2190880410066BFAC /* FOGMJPEGImageView */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		AEF319C2190880410066BFAC /* FOGMJPEGImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AEF319C91908844E0066BFAC /* FOGJPEGImageMarker.h */,
+				AEF319CA1908844E0066BFAC /* FOGJPEGImageMarker.m */,
+				AE1BCD101911D14B00AAD7E5 /* FOGMJPEGDataReader.h */,
+				AE1BCD111911D14B00AAD7E5 /* FOGMJPEGDataReader.m */,
+				AEF319C3190880410066BFAC /* FOGMJPEGImageView.h */,
+				AEF319C4190880410066BFAC /* FOGMJPEGImageView.m */,
+			);
+			name = FOGMJPEGImageView;
+			path = ../FOGMJPEGImageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEF3198319087B3D0066BFAC /* FOGMJPEGImageView Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF319B619087B3D0066BFAC /* Build configuration list for PBXNativeTarget "FOGMJPEGImageView Example" */;
+			buildPhases = (
+				AEF3198019087B3D0066BFAC /* Sources */,
+				AEF3198119087B3D0066BFAC /* Frameworks */,
+				AEF3198219087B3D0066BFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FOGMJPEGImageView Example";
+			productName = "FOGMJPEGImageView Example";
+			productReference = AEF3198419087B3D0066BFAC /* FOGMJPEGImageView Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEF319A419087B3D0066BFAC /* FOGMJPEGImageView ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEF319B919087B3D0066BFAC /* Build configuration list for PBXNativeTarget "FOGMJPEGImageView ExampleTests" */;
+			buildPhases = (
+				AEF319A119087B3D0066BFAC /* Sources */,
+				AEF319A219087B3D0066BFAC /* Frameworks */,
+				AEF319A319087B3D0066BFAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEF319AB19087B3D0066BFAC /* PBXTargetDependency */,
+			);
+			name = "FOGMJPEGImageView ExampleTests";
+			productName = "FOGMJPEGImageView ExampleTests";
+			productReference = AEF319A519087B3D0066BFAC /* FOGMJPEGImageView ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEF3197C19087B3D0066BFAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FOG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Foggy;
+				TargetAttributes = {
+					AEF319A419087B3D0066BFAC = {
+						TestTargetID = AEF3198319087B3D0066BFAC;
+					};
+				};
+			};
+			buildConfigurationList = AEF3197F19087B3D0066BFAC /* Build configuration list for PBXProject "FOGMJPEGImageView Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AEF3197B19087B3D0066BFAC;
+			productRefGroup = AEF3198519087B3D0066BFAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEF3198319087B3D0066BFAC /* FOGMJPEGImageView Example */,
+				AEF319A419087B3D0066BFAC /* FOGMJPEGImageView ExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEF3198219087B3D0066BFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF319A019087B3D0066BFAC /* Images.xcassets in Resources */,
+				AEF3199219087B3D0066BFAC /* InfoPlist.strings in Resources */,
+				AEF3199B19087B3D0066BFAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF319A319087B3D0066BFAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF319B119087B3D0066BFAC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEF3198019087B3D0066BFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF3199419087B3D0066BFAC /* main.m in Sources */,
+				AEF3199819087B3D0066BFAC /* FOGAppDelegate.m in Sources */,
+				AEF3199E19087B3D0066BFAC /* FOGViewController.m in Sources */,
+				AEF319CB1908844E0066BFAC /* FOGJPEGImageMarker.m in Sources */,
+				AEF319C5190880410066BFAC /* FOGMJPEGImageView.m in Sources */,
+				AE1BCD121911D14B00AAD7E5 /* FOGMJPEGDataReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEF319A119087B3D0066BFAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEF319B319087B3D0066BFAC /* FOGMJPEGImageView_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEF319AB19087B3D0066BFAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEF3198319087B3D0066BFAC /* FOGMJPEGImageView Example */;
+			targetProxy = AEF319AA19087B3D0066BFAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AEF3199019087B3D0066BFAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF3199119087B3D0066BFAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEF3199919087B3D0066BFAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF3199A19087B3D0066BFAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AEF319AF19087B3D0066BFAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEF319B019087B3D0066BFAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEF319B419087B3D0066BFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AEF319B519087B3D0066BFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AEF319B719087B3D0066BFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Prefix.pch";
+				INFOPLIST_FILE = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AEF319B819087B3D0066BFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Prefix.pch";
+				INFOPLIST_FILE = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AEF319BA19087B3D0066BFAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FOGMJPEGImageView Example.app/FOGMJPEGImageView Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FOGMJPEGImageView ExampleTests/FOGMJPEGImageView ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AEF319BB19087B3D0066BFAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FOGMJPEGImageView Example.app/FOGMJPEGImageView Example";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FOGMJPEGImageView Example/FOGMJPEGImageView Example-Prefix.pch";
+				INFOPLIST_FILE = "FOGMJPEGImageView ExampleTests/FOGMJPEGImageView ExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEF3197F19087B3D0066BFAC /* Build configuration list for PBXProject "FOGMJPEGImageView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF319B419087B3D0066BFAC /* Debug */,
+				AEF319B519087B3D0066BFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF319B619087B3D0066BFAC /* Build configuration list for PBXNativeTarget "FOGMJPEGImageView Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF319B719087B3D0066BFAC /* Debug */,
+				AEF319B819087B3D0066BFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEF319B919087B3D0066BFAC /* Build configuration list for PBXNativeTarget "FOGMJPEGImageView ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEF319BA19087B3D0066BFAC /* Debug */,
+				AEF319BB19087B3D0066BFAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEF3197C19087B3D0066BFAC /* Project object */;
+}

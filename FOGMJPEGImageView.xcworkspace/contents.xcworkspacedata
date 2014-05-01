@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "FOGMJPEGImageView">
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGJPEGImageMarker.h">
+      </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGJPEGImageMarker.m">
+      </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGMJPEGDataReader.h">
+      </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGMJPEGDataReader.m">
+      </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGMJPEGImageView.h">
+      </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGMJPEGImageView.m">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Example/FOGMJPEGImageView Example.xcodeproj">
+   </FileRef>
+</Workspace>
