@@ -1,5 +1,5 @@
 //
-//  FOGAppDelegate.h
+//  Camera.m
 //
 //  Copyright (c) 2014 Richard McGuire
 //
@@ -21,10 +21,21 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "Camera.h"
 
-@interface FOGAppDelegate : UIResponder <UIApplicationDelegate>
+@implementation Camera
 
-@property (strong, nonatomic) UIWindow *window;
+- (instancetype)initWithName:(NSString *)name URL:(NSURL *)URL
+{
+    self = [super init];
+    if ( !self ) {
+        return nil;
+    }
+    
+    _name = name;
+    _URL = URL;
+    
+    return self;
+}
 
 @end

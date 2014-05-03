@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="FOGViewController" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="vXZ-lx-hvc" customClass="FOGViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,15 +16,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-7j-b18" customClass="FOGMJPEGImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="594"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-C9-Arl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="4Pl-0L-Dwa"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="ztM-sa-4th"/>
+                                </connections>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yjc-7j-b18" customClass="FOGMJPEGImageView">
+                                <rect key="frame" x="0.0" y="162" width="320" height="244"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="244" id="aZd-2O-NUk"/>
+                                    <constraint firstAttribute="width" constant="320" id="fc5-hY-mFW"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aac-iG-bEj">
+                                <rect key="frame" x="20" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Ftf-AJ-sX2"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="invokeStart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4pV-Ci-JPS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-VU-my1">
+                                <rect key="frame" x="254" y="518" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="4Rg-rG-LVf"/>
+                                </constraints>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="invokeStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LoR-U6-AvS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aac-iG-bEj" firstAttribute="baseline" secondItem="6gO-VU-my1" secondAttribute="baseline" id="NnV-Md-t0c"/>
+                            <constraint firstItem="Yjc-7j-b18" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Ug6-YS-2Hc"/>
+                            <constraint firstItem="Yjc-7j-b18" firstAttribute="top" secondItem="qbc-C9-Arl" secondAttribute="bottom" id="WbT-hU-K7J"/>
+                            <constraint firstAttribute="bottom" secondItem="aac-iG-bEj" secondAttribute="bottom" constant="20" symbolic="YES" id="aAV-S7-dL2"/>
+                            <constraint firstAttribute="trailing" secondItem="6gO-VU-my1" secondAttribute="trailing" constant="20" symbolic="YES" id="anQ-x4-lcY"/>
+                            <constraint firstItem="Yjc-7j-b18" firstAttribute="trailing" secondItem="qbc-C9-Arl" secondAttribute="trailing" id="cDD-IF-neN"/>
+                            <constraint firstItem="qbc-C9-Arl" firstAttribute="leading" secondItem="Yjc-7j-b18" secondAttribute="leading" id="hYS-ih-WrJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yjc-7j-b18" secondAttribute="trailing" id="o8q-Uv-8be"/>
+                            <constraint firstItem="qbc-C9-Arl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="s9G-20-gSV"/>
+                            <constraint firstItem="aac-iG-bEj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="zQp-E7-sKG"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraPicker" destination="qbc-C9-Arl" id="9Cu-Ts-iog"/>
                         <outlet property="mjpegImageView" destination="Yjc-7j-b18" id="JNy-GR-xGf"/>
+                        <outlet property="startButton" destination="aac-iG-bEj" id="68R-48-pRr"/>
+                        <outlet property="stopButton" destination="6gO-VU-my1" id="WyB-ft-Szd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

@@ -29,4 +29,6 @@
 
 - (void)startWithURL:(NSURL *)url;
 
+- (void)stop;
+
 @end

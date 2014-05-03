@@ -67,6 +67,11 @@
     [self.dataReader startReadingFromURL:url];
 }
 
+- (void)stop
+{
+    [self.dataReader stop];
+}
+
 #pragma mark - FOGMJPEGDataReaderDelegate
 
 - (void)FOGMJPEGDataReader:(FOGMJPEGDataReader *)reader receivedImage:(UIImage *)image

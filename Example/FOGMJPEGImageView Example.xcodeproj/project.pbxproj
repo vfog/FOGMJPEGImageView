@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AE1BCD121911D14B00AAD7E5 /* FOGMJPEGDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BCD111911D14B00AAD7E5 /* FOGMJPEGDataReader.m */; };
+		AE1BCD17191486CD00AAD7E5 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BCD16191486CD00AAD7E5 /* Camera.m */; };
 		AEF3198819087B3D0066BFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198719087B3D0066BFAC /* Foundation.framework */; };
 		AEF3198A19087B3D0066BFAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198919087B3D0066BFAC /* CoreGraphics.framework */; };
 		AEF3198C19087B3D0066BFAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF3198B19087B3D0066BFAC /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		AE1BCD101911D14B00AAD7E5 /* FOGMJPEGDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOGMJPEGDataReader.h; sourceTree = "<group>"; };
 		AE1BCD111911D14B00AAD7E5 /* FOGMJPEGDataReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOGMJPEGDataReader.m; sourceTree = "<group>"; };
+		AE1BCD15191486CD00AAD7E5 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Camera.h; path = Models/Camera.h; sourceTree = "<group>"; };
+		AE1BCD16191486CD00AAD7E5 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Camera.m; path = Models/Camera.m; sourceTree = "<group>"; };
 		AEF3198419087B3D0066BFAC /* FOGMJPEGImageView Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FOGMJPEGImageView Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF3198719087B3D0066BFAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AEF3198919087B3D0066BFAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE1BCD13191486A500AAD7E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE1BCD15191486CD00AAD7E5 /* Camera.h */,
+				AE1BCD16191486CD00AAD7E5 /* Camera.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AE1BCD14191486AB00AAD7E5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		AEF3197B19087B3D0066BFAC = {
 			isa = PBXGroup;
 			children = (
@@ -122,12 +141,14 @@
 		AEF3198D19087B3D0066BFAC /* FOGMJPEGImageView Example */ = {
 			isa = PBXGroup;
 			children = (
+				AE1BCD14191486AB00AAD7E5 /* Controllers */,
+				AE1BCD13191486A500AAD7E5 /* Models */,
 				AEF3199619087B3D0066BFAC /* FOGAppDelegate.h */,
 				AEF3199719087B3D0066BFAC /* FOGAppDelegate.m */,
-				AEF3199919087B3D0066BFAC /* Main.storyboard */,
 				AEF3199C19087B3D0066BFAC /* FOGViewController.h */,
 				AEF3199D19087B3D0066BFAC /* FOGViewController.m */,
 				AEF3199F19087B3D0066BFAC /* Images.xcassets */,
+				AEF3199919087B3D0066BFAC /* Main.storyboard */,
 				AEF3198E19087B3D0066BFAC /* Supporting Files */,
 			);
 			path = "FOGMJPEGImageView Example";
@@ -282,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1BCD17191486CD00AAD7E5 /* Camera.m in Sources */,
 				AEF3199419087B3D0066BFAC /* main.m in Sources */,
 				AEF3199819087B3D0066BFAC /* FOGAppDelegate.m in Sources */,
 				AEF3199E19087B3D0066BFAC /* FOGViewController.m in Sources */,
