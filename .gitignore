@@ -6,3 +6,6 @@
 #
 # Pods/
 
+*.xcworkspace
+!default.xcworkspace
+*.xcuserstate
