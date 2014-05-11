@@ -26,7 +26,9 @@
 
 @interface FOGMJPEGImageView()
 
-@property (nonatomic, strong, readwrite) FOGMJPEGDataReader *dataReader;
+@property (nonatomic, readwrite) FOGMJPEGDataReader *dataReader;
+
+@property (nonatomic, readwrite) BOOL isReadingData;
 
 @end
 
@@ -64,11 +66,21 @@
 
 - (void)startWithURL:(NSURL *)url
 {
+    if ( self.isReadingData ) {
+        return;
+    }
+    
+    self.isReadingData = YES;
     [self.dataReader startReadingFromURL:url];
 }
 
 - (void)stop
 {
+    if ( !self.isReadingData ) {
+        return;
+    }
+    
+    self.isReadingData = NO;
     [self.dataReader stop];
 }
 
