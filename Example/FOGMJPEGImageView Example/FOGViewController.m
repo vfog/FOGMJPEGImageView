@@ -50,18 +50,30 @@
                                               URL:[NSURL URLWithString:@"http://130.15.110.15/mjpg/video.mjpg?camera=1"]],
                      [[Camera alloc] initWithName:@"Spring Grove (Spring Grove Minnesota United States)"
                                               URL:[NSURL URLWithString:@"http://204.248.124.203/mjpg/video.mjpg?camera=1"]]];
+    
+    [self.cameraPicker selectRow:0 inComponent:0 animated:NO];
+    self.selectedCamera = self.cameras[0];
+    self.stopButton.enabled = NO;
 }
 
 #pragma mark - FOGViewController
 
 - (IBAction)invokeStart:(id)sender
 {
+    self.startButton.enabled = NO;
+    
     [self.mjpegImageView startWithURL:self.selectedCamera.URL];
+
+    self.stopButton.enabled = YES;
 }
 
 - (IBAction)invokeStop:(id)sender
 {
+    self.stopButton.enabled = NO;
+    
     [self.mjpegImageView stop];
+    
+    self.startButton.enabled = YES;
 }
 
 #pragma mark - UIPickerViewDataSource
