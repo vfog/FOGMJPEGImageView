@@ -21,10 +21,11 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#import "FOGMJPEGDataReader.h"
 #import "FOGMJPEGImageView.h"
 #import "FOGJPEGImageMarker.h"
 
-@interface FOGMJPEGImageView()
+@interface FOGMJPEGImageView() <FOGMJPEGDataReaderDelegate>
 
 @property (nonatomic, readwrite) FOGMJPEGDataReader *dataReader;
 
@@ -35,6 +36,19 @@
 @implementation FOGMJPEGImageView
 
 #pragma mark - Initializers
+
+- (instancetype)init
+{
+    self = [super init];
+    if ( !self ) {
+        return nil;
+    }
+
+    self.dataReader = [[FOGMJPEGDataReader alloc] init];
+    self.dataReader.delegate = self;
+    
+    return self;
+}
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
@@ -62,10 +76,19 @@
     return self;
 }
 
+- (NSURLSession *)URLSession
+{
+    return self.dataReader.URLSession;
+}
+
 #pragma mark - FOGMJPEGImageView
 
 - (void)startWithURL:(NSURL *)url
 {
+    if ( !url ) {
+        return;
+    }
+    
     if ( self.isReadingData ) {
         return;
     }
@@ -80,8 +103,8 @@
         return;
     }
     
-    self.isReadingData = NO;
     [self.dataReader stop];
+    self.isReadingData = NO;
 }
 
 #pragma mark - FOGMJPEGDataReaderDelegate

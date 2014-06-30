@@ -14,7 +14,7 @@ Copy the contents of the FOGMJPEGImageView directory into your project:
 - FOGJPEGImageMarker.m
 - FOGMJPEGDataReader.h
 - FOGMJPEGDataReader.m
-- FOGMJPEGImageView.h
+- FOGMJPEGImageView.hÂ
 - FOGMJPEGImageView.m
 
 Usage

@@ -21,14 +21,24 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import "FOGMJPEGDataReader.h"
+@interface FOGMJPEGImageView : UIImageView<NSURLSessionDataDelegate>
 
-@interface FOGMJPEGImageView : UIImageView<FOGMJPEGDataReaderDelegate, NSURLSessionDataDelegate>
+@property (nonatomic, strong, readonly) NSURLSession *URLSession;
 
-@property (nonatomic, strong, readonly) FOGMJPEGDataReader *dataReader;
-
+/**
+ Begins reading MJPEG data from the given URL.
+ 
+ Successive calls to `startWithURL:` without first calling `stop` will be ignored.
+ 
+ @param url The URL of the MJPEG feed, if nil is passed the call will be ignored.
+ */
 - (void)startWithURL:(NSURL *)url;
 
+/**
+ Stops reading MJPEG data.
+ 
+ Successive calls to stop will be ignored and have no effect.
+ */
 - (void)stop;
 
 @end

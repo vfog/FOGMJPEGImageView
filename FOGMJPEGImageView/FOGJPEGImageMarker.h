@@ -21,12 +21,16 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import <Foundation/Foundation.h>
-
 @interface FOGJPEGImageMarker : NSObject
 
+/**
+ `NSData` representation of the bytes that denote the start of JPEG encoded image.
+ */
 + (NSData *)JPEGStartMarker;
 
+/**
+ `NSData` representation of the bytes that denote the end of a JPEG encoded image.
+ */
 + (NSData *)JPEGEndMarker;
 
 @end
