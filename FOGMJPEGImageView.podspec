@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.homepage     = "https://github.com/vfog/FOGMJPEGImageView"
   s.author       = "Richard C. McGuire"
-  s.source       = { :git => "https://github.com/vfog/FOGMJPEGImageView.git", :commit => "526a1aed1bd1abb3ba4b090abbfca811d48a9959" } #, :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/vfog/FOGMJPEGImageView.git", :tag => "0.0.1" }
   s.requires_arc = true
 
   s.platform     = :ios, "7.0"
