@@ -21,9 +21,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+#import "FOGMJPEGImageViewDelegate.h"
+
 @interface FOGMJPEGImageView : UIImageView<NSURLSessionDataDelegate>
 
 @property (nonatomic, strong, readonly) NSURLSession *URLSession;
+@property (nonatomic, weak) id<FOGMJPEGImageViewDelegate> delegate;
 
 /**
  Begins reading MJPEG data from the given URL.

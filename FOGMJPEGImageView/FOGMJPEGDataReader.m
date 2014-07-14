@@ -113,4 +113,16 @@
     self.receivedData = [NSMutableData dataWithData:unusedData];
 }
 
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(NSError *)error
+{
+    if (error.code == kCFURLErrorCancelled) {
+        // Manually cancelled request
+        return;
+    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        __strong id<FOGMJPEGDataReaderDelegate> strongDelegate = self.delegate;
+        [strongDelegate FOGMJPEGDataReader:self loadingImageDidFailWithError:error];
+    });
+}
+
 @end
