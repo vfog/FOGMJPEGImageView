@@ -56,4 +56,9 @@
  */
 - (void)FOGMJPEGDataReader:(FOGMJPEGDataReader *)reader receivedImage:(UIImage *)image;
 
+/**
+ Tells the delegate that the data reader failed loading an image, this method is invoked on the main thread.
+ */
+- (void)FOGMJPEGDataReader:(FOGMJPEGDataReader *)reader loadingImageDidFailWithError:(NSError *)error;
+
 @end

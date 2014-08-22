@@ -24,7 +24,7 @@
 #import <UIKit/UIKit.h>
 #import "FOGMJPEGImageView.h"
 
-@interface FOGViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface FOGViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, FOGMJPEGImageViewDelegate>
 
 
 @property (nonatomic) IBOutlet UIPickerView *cameraPicker;

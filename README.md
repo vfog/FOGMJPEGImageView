@@ -14,8 +14,9 @@ Copy the contents of the FOGMJPEGImageView directory into your project:
 - FOGJPEGImageMarker.m
 - FOGMJPEGDataReader.h
 - FOGMJPEGDataReader.m
-- FOGMJPEGImageView.hÂ
+- FOGMJPEGImageView.h
 - FOGMJPEGImageView.m
+- FOGMJPEGImageViewDelegate.h
 
 Usage
 =====
@@ -32,6 +33,30 @@ You may halt the MJPEG feed by calling `stop`.
 
 ```objective-c
 [mjpegImageView stop];
+```
+
+If you want to get informed about certain event you can make your class conform to the FOGMJPEGImageViewDelegate
+```objective-c
+@interface MyClass () <FOGMJPEGImageViewDelegate>
+```
+
+Set your class as the delegate of the FOGMJPEGImageView
+```objective-c
+    mjpegImageView.delegate = self;
+```
+
+And implement some or all of the given delegate methods from the protocol
+```objective-c
+- (void)FOGMJPEGImageViewDidReceiveImage:(FOGMJPEGImageView *)mjpegImageView
+{
+    // Handle success.
+}
+
+- (void)FOGMJPEGImageView:(FOGMJPEGImageView *)mjpegImageView loadingImgaeDidFailWithError:(NSError *)error
+{
+    // Handle error.
+}
+
 ```
 
 Maintainers
