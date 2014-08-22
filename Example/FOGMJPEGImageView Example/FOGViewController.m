@@ -39,6 +39,8 @@
 {
     [super viewDidLoad];
 
+    self.mjpegImageView.delegate = self;
+    
     // camera data obtained from http://www.mjpeg.net/webcams
     self.cameras = @[[[Camera alloc] initWithName:@"Grand Valley State University (Allendale Michigan United States)"
                                               URL:[NSURL URLWithString:@"http://148.61.97.229/mjpg/video.mjpg?camera=1"]],
@@ -100,6 +102,24 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     self.selectedCamera = (Camera *)[self.cameras objectAtIndex:row];
+}
+
+#pragma mark - FOGMJPEGImageViewDelegate Methods
+
+- (void)FOGMJPEGImageViewDidReceiveImage:(FOGMJPEGImageView *)mjpegImageView
+{
+    // Success!
+}
+
+- (void)FOGMJPEGImageView:(FOGMJPEGImageView *)mjpegImageView loadingImgaeDidFailWithError:(NSError *)error
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:@"Failed loading MJPEG Stream"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Okay"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [self invokeStop:nil];
 }
 
 @end

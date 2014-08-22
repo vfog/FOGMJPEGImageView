@@ -22,6 +22,9 @@
       <FileRef
          location = "group:FOGMJPEGImageView/FOGMJPEGImageView.m">
       </FileRef>
+      <FileRef
+         location = "group:FOGMJPEGImageView/FOGMJPEGImageViewDelegate.h">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Example/FOGMJPEGImageView Example.xcodeproj">

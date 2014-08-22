@@ -112,6 +112,16 @@
 - (void)FOGMJPEGDataReader:(FOGMJPEGDataReader *)reader receivedImage:(UIImage *)image
 {
     self.image = image;
+    if ([self.delegate respondsToSelector:@selector(FOGMJPEGImageViewDidReceiveImage:)]) {
+        [self.delegate FOGMJPEGImageViewDidReceiveImage:self];
+    }
+}
+
+- (void)FOGMJPEGDataReader:(FOGMJPEGDataReader *)reader loadingImageDidFailWithError:(NSError *)error
+{
+    if ([self.delegate respondsToSelector:@selector(FOGMJPEGImageView:loadingImgaeDidFailWithError:)]) {
+        [self.delegate FOGMJPEGImageView:self loadingImgaeDidFailWithError:error];
+    }
 }
 
 @end
