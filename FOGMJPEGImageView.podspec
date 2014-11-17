@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "FOGMJPEGImageView"
-  s.version      = "0.0.1"
+  s.version      = "0.1"
   s.summary      = "UIImageView subclass dedicated to displaying a MJPEG feed."
   s.description  = <<-DESC
                    FOGMJPEGImageView is a UIImageView subclass dedicated to displaying a MJPEG from a remote feed.
